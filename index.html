@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Book Appointment</title>
+</head>
+
+<body>
+    <div class="lady-image">
+        <img src="/Images/rian-ramirez-rm7rZYdl3rY-unsplash 1.png" alt="">
+    </div>
+    <div class="form-container">
+        <form action="https://formsubmit.co/pradipkaityux@gmail.com" method="post" class="form">
+            <h2>Book Appointment for Your Health</h2>
+            <h3>I am registering for</h3><br>
+            <input type="radio" value="myself" name="appointment" id="forme">
+            <label for="forme" class="first">Myself</label>
+
+            <input type="radio" value="family" name="appointment" id="family">
+            <label for="family" class="second">My Family</label>
+
+            <input type="radio" value="others" name="appointment" id="others">
+            <label for="others" class="third">Others</label>
+            <br><br>
+
+            <h3>Patient's Full Name</h3>
+            <input type="text" name="username" required placeholder="Full Name" id="fullName" autocomplete="off"
+                required>
+
+
+            <h3>Sex</h3><br>
+            <input type="radio" value="male" name="sex" id="male">
+            <label for="male" class="male">Male</label>
+            <input type="radio" value="female" name="sex" id="female">
+            <label for="female" class="female">Female</label>
+
+            <br><br>
+            <h3>Mobile Number</h3>
+            <input type="number" name="mobile" required placeholder="Mobile Number" id="mobileNumber"
+                autocomplete="off" required>
+
+            <div class="date-time">
+                <div class="date-container">
+                    <h3>Date</h3>
+                    <input type="date" name="date" id="datePicker" required>
+                </div>
+
+                <div class="time-container">
+                    <h3>Time</h3>
+                    <select name="time" id="timePicker" required>
+                        <option value="10">10:00</option>
+                        <option value="10">11:00</option>
+                        <option value="10">12:00</option>
+                        <option value="10">01:00</option>
+                        <option value="10">02:00</option>
+                        <option value="10">03:00</option>
+                        <option value="10">04:00</option>
+                        <option value="10">05:00</option>
+                        <option value="10">06:00</option>
+                    </select>
+                    <select name="meridian" id="meridianPicker">
+                        <option value="10">AM</option>
+                        <option value="10">PM</option>
+                    </select>
+                </div>
+            </div>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="submit" value="Book Appointment" class="button">
+        </form>
+    </div>
+
+</body>
+
+</html>
